@@ -336,7 +336,6 @@ RDSPASS: SecureString
 
 Let's run the project. It is successful!
 
-![](images/BuildandRelease-success.png)
 
 #### Create SoftwareTesting Build Project
 
