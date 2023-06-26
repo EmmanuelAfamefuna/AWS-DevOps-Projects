@@ -324,7 +324,7 @@ We will create a playbook `docker_project.yml` to configure 3 app servers with A
   vars:
     container_path: /home/ec2-user/nodejs
     container_name: emmanuelafamefuna_nodejs
-    image_name: <your_AWS_account_number>.dkr.ecr.us-east-1.amazonaws.com/rumeysa-repo/todo-app:nodejs
+    image_name: <your_AWS_account_number>.dkr.ecr.us-east-1.amazonaws.com/emmanuelafamefuna-repo/todo-app:nodejs
   tasks:
     - name: remove {{ container_name }} container and {{ image_name }} if exists
       shell: "docker ps -q --filter 'name={{ container_name }}' && docker stop {{ container_name }} && docker rm -fv {{ container_name }} && docker image rm -f {{ image_name }} || echo 'Not Found'"
