@@ -1,6 +1,6 @@
 # Project-6: Continuous Integration on AWS Cloud
 
-[*Project Source*](https://www.udemy.com/course/devopsprojects/?src=sac&kw=devops+projects)
+
 
 ### Pre-Requisites:
 
@@ -48,7 +48,7 @@ ssh git-codecommit.us-east-1.amazonaws.com
 ![](images/codecommit-ssh-connection-successful.png)
 
 Next we clone the repository to a location that we want in our local. I will use the Github repository for `vprofile-project` in my local, and turn this repository to CodeCommit repository. When I am in Github repo directory, I will run below commands.
-[Project code](https://github.com/rumeysakdogan/vprofileproject-all.git)
+[Project code](https://github.com/emmanuelafamefuna/vprofileproject-all.git)
 
 ```sh
 git checkout master
@@ -103,7 +103,7 @@ We need to have an account, from account avatar -> `My Account` -> `Security`. G
 
 Next we create a project, `+` -> `Analyze Project` -> `create project manually`. Below details will be used in our Build.
 ```sh
-Organization: rumeysa-devops-projects
+Organization: emmanuelafame-devops-projects
 Project key: vprofile-repo-rd
 Public
 ```
