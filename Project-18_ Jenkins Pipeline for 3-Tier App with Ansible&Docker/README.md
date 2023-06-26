@@ -301,7 +301,7 @@ We will create a playbook `docker_project.yml` to configure 3 app servers with A
   vars:
     postgre_container: /home/ec2-user/postgresql
     container_name: emmanuelafamefuna_postgre
-    image_name: <your_AWS_account_number>.dkr.ecr.us-east-1.amazonaws.com/rumeysa-repo/todo-app:postgr
+    image_name: <your_AWS_account_number>.dkr.ecr.us-east-1.amazonaws.com/emmanuelafamefuna-repo/todo-app:postgr
   tasks:
     - name: remove {{ container_name }} container and {{ image_name }} if exists
       shell: "docker ps -q --filter 'name={{ container_name }}' && docker stop {{ container_name }} && docker rm -fv {{ container_name }} && docker image rm -f {{ image_name }} || echo 'Not Found'"
