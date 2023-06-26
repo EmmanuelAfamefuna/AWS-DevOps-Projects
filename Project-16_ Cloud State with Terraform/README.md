@@ -68,7 +68,6 @@ Create `vars.tf` file and `providers.tf` file as in given under `terraform-files
 
 We will create an SSH key with name of `vprofilekey` as we mentioned in `vars.tf` file. Go to `terraform-aws-vprofile` directory, run below command:
 
-![](images/ssh-keygen.png)
 
 Now we can create `keypairs.tf` file with below content. We will use `file` function to get the content from path instead of copy-pasting whole content.
 
