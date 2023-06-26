@@ -1,6 +1,6 @@
 # Project-11: Continuous Delivery & Configuration Management (Jenkins&Ansible)
 
-[*Project Source*](https://www.udemy.com/course/devopsprojects/?src=sac&kw=devops+projects)
+
 
 ![](images/Project-11.png)
 
