@@ -1,6 +1,5 @@
 # Project-16: Cloud State with Terraform
 
-[*Project Source*](https://www.udemy.com/course/devopsprojects/?src=sac&kw=devops+projects)
 
 ![](images/Project-16.png)
 
@@ -15,8 +14,6 @@
 
 We will create a repo in GitHub and name it as `terraform-aws-vprofile`.
 You can make it private not to expose any Access keys you are using, since my AWS credentials are configured with awscli, I will create thsi repo as public.
-
-![](images/repo-created.png)
 
 ### Step-2: Clone the repo to your local
 
@@ -181,7 +178,7 @@ terraform apply
 
 Clone repository to from bewlo repository, we need to do some updates in `application.properties` file.
 ```sh
-git clone -b vp-rem https://github.com/rumeysakdogan/vprofileproject-all.git
+git clone -b vp-rem https://github.com/emmanuelafamefuna/vprofileproject-all.git
 ```
 We will update below parts in that file.
 Replace db01 -> RDS endpoint
