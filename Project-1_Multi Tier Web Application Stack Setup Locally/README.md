@@ -176,7 +176,7 @@ exit
 ![](images/connected-to-mariadb.png)
 - Next we will clone source code to database vm. And change directory to `src/main/resources/` to get the `sql queries.
 ```
-git clone https://github.com/rumeysakdogan/vprofile-project.git
+git clone https://github.com/emmanuelafamefuna/vprofile-project.git
 cd vprofile-project/src/main/resources/
 ```
 - First we will run below queries before initializing our database.
