@@ -1,6 +1,6 @@
 # Project-5: Continuous Integration Using jenkins, Nexus, Sonarqube and Slack
 
-[*Project Source*](https://www.udemy.com/course/devopsprojects/?src=sac&kw=devops+projects)
+
 
 ## Pre-requisities:
 
@@ -348,7 +348,7 @@ Member repositories:
 
 - The content will be cloned from below link:
 ```sh
-git clone -b ci-jenkins git@github.com:rumeysakdogan/vprofileproject-all.git
+git clone -b ci-jenkins git@github.com:emmanuelafamefuna/vprofileproject-all.git
 ```
 
 ### Step-6: Build Job with Nexus Repo 
@@ -442,7 +442,7 @@ path: Jenkinsfile
 ```sh
 sudo -i
 sudo su - jenkins
-git ls-remote -h -- git@github.com:rumeysakdogan/vprociproject.git HEAD
+git ls-remote -h -- git@github.com:emmanuelafamefuna/vprociproject.git HEAD
 ```
 
 - Now its Build time. Our build pipeline is successful!
