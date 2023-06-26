@@ -1,6 +1,6 @@
 # Project-8: Continuous Delivery on AWS
 
-[*Project Source*](https://www.udemy.com/course/devopsprojects/?src=sac&kw=devops+projects)
+
 
 ### Pre-Requisites:
 
@@ -103,7 +103,7 @@ We need to have an account, from account avatar -> `My Account` -> `Security`. G
 
 Next we create a project, `+` -> `Analyze Project` -> `create project manually`. Below details will be used in our Build.
 ```sh
-Organization: rumeysa-devops-projects
+Organization: emmanuelafamefuna-devops-projects
 Project key: vprofile-repo-rd
 Public
 ```
@@ -256,7 +256,7 @@ sudo -i
 yum install mysql git -y
 mysql -h <RDS_endpoint> -u <RDS_username> -p<RDS_password>
 show databases;
-git clone https://github.com/rumeysakdogan/vprofileproject-all.git
+git clone https://github.com/emmanuelafamefuna/vprofileproject-all.git
 cd vprofileproject-all/
 git checkout cd-aws
 cd src/main/resources
