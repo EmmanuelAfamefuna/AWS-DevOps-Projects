@@ -99,7 +99,6 @@ git push origin ci-aws
 
 We need to have an account, from account avatar -> `My Account` -> `Security`. Generate token name as `vprofile-sonartoken`. Note the token.
 
-![](images/sonar-token.png)
 
 Next we create a project, `+` -> `Analyze Project` -> `create project manually`. Below details will be used in our Build.
 ```sh
@@ -117,7 +116,7 @@ We will create paramters for below variables.
 ```sh
 CODEARTIFACT_TOKEN	 SecureString	
 HOST      https://sonarcloud.io
-ORGANIZATION           rumeysa-devops-projects
+ORGANIZATION           emmanuelafamefuna-devops-projects
 PROJECT                vprofile-repo-rd
 SONARTOKEN             SecureString
 ```
@@ -145,11 +144,7 @@ We need to add a policy to the service role created for this Build project. Find
 
 It is time to Build our project.
 
-![](images/sonarbuild-successful.png)
-
 We can check from SonarCloud too.
-
-![](images/sonarcloud-after-build.png)
 
 I can add Quality Gate to this Build Project, we can create a Qulaity gate from SonarCloud and add to our project.
 
