@@ -455,7 +455,7 @@ git ls-remote -h -- git@github.com:emmanuelafamefuna/vprociproject.git HEAD
 
 - Go to Github repository, `Settings` -> `Webhooks` -> Add `JenkinsURL` with `/github-webhook/` at the end.
 
-![](images/github-webhook.png)
+
 
 - Next we will go to Jenkins and add below configuration to our `vprofile-ci-pipeline` jon.
 ```sh
@@ -633,7 +633,7 @@ stage('UPLOAD ARTIFACT') {
 
 - Next we need to Add jenkins app to slack. Search in Google with `Slack apps`. Then search for `jenkins` add to Slack. We will choose the channel `jenkins-cicd`. It will give us to setup instructions, from there copy `Integration token credential ID` .
 
-![](images/slack-apps.png)
+
 
 - We will go to Jenkins dashboard `Configure system` -> `Slack`
 ```sh
