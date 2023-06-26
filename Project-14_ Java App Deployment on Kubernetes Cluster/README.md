@@ -202,23 +202,13 @@ kubectl apply -f vproapp-svc.yml
 
 We will create a A record with Alias to Load balancer.
 
-![](img/route53-cname.png)
-
 Lets validate our application from browser with our new dns name.
-
-![](img/app-login.png)
 
 We validated DB by successfully logging in with admin_vp/admin_vp username&pwd.
 
-![](img/db-working.png)
-
 We can validate RabbitMQ service.
 
-![](img/rmq-working.png)
-
 Lastly, we can verify our memcached service.
-
-![](img/mcd-working.png)
 
 ### Step-14: Cleanup 
 
