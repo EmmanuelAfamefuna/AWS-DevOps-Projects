@@ -88,7 +88,7 @@ kops create cluster --name=kubeapp.aws-devops-journey-of-emmanuelafamefuna.net \
 We can create cluster with below command, we need to specify the s3 bucket we use for state config.
 
 ```sh
-kops update cluster --name kubeapp.aws-devops-journey-of-rumeysadogan.net --state=s3://kubeapp-kops-state --yes --admin
+kops update cluster --name kubeapp.aws-devops-journey-of-emmanuelafamefuna.net --state=s3://kubeapp-kops-state --yes --admin
 ```
 
 After issuing thsi command, wait 10-15 minutes before validating the cluster with below command:
