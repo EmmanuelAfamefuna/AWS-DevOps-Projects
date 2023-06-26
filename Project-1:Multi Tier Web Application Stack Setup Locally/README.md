@@ -2,7 +2,7 @@
 
 [*Project Source*](https://www.udemy.com/course/devopsprojects/?src=sac&kw=devops+projects)
 
-![Project-Architecture](images/Project-1-Architecture.png)
+![Project-1-Architecture](https://github.com/EmmanuelAfamefuna/AWS-DevOps-Projects/assets/95730360/a84cf165-ce2d-4bae-8fa5-5592ff9481bd)
 
 ## PreRequisites Installed:
   * Oracle VM VirtualBox Manager
@@ -15,7 +15,7 @@
 
 - First clone the repository
 ```sh
-git clone https://github.com/rumeysakdogan/vprofile-project.git
+git clone https://github.com/emmanuelafamefuna/vprofile-project.git
 ```
 
 - We need to go to directory that our Vagrantfile exists. Before we run our VBoxes using `vagrant`, we need to install below plugin.
@@ -30,7 +30,9 @@ vagrant up
 PS: Bringing VMs can take long time sometimes. If VM setup stops in the middle, run `vagrant up` command again.
 
 - We can check our VMs from `Oracle VM VirtualBox Manager`.
-![](images/VMs-are-running-in-VirtualBox.png)
+  
+![VMs-are-running-in-VirtualBox](https://github.com/EmmanuelAfamefuna/AWS-DevOps-Projects/assets/95730360/b3d72491-53ec-4d05-8f1d-c696a9af1879)
+
 
 - Next we will validate our VMs one by one with command `vagrant ssh <name_of_VM_given_in_Vagrantfile>`
 ```sh
@@ -41,12 +43,14 @@ vagrant ssh web01
 ```sh
 cat /etc/hosts
 ```
-![](images/connected-web01-via-ssh.png)
+<img width="894" alt="connected-web01-via-ssh" src="https://github.com/EmmanuelAfamefuna/AWS-DevOps-Projects/assets/95730360/071b2ee9-f429-48aa-9edf-0e577f95180b">
+
 - Now we will try to ping `app01` from `web01` vbox.
 ```sh
 ping app01
 ```
-![](images/pinging-app01-from-web01.png)
+
+<img width="894" alt="pinging-app01-from-web01" src="https://github.com/EmmanuelAfamefuna/AWS-DevOps-Projects/assets/95730360/0eabd2ed-d719-45c8-a415-2b49ca00a245">
 
 - We are able to connect `app01` successfully. Now we will check other services similarly.
 ```sh
@@ -80,7 +84,8 @@ Indexing/Search service
 6. MySQL
 SQL Database
 ```
-![Image not found: images/Detailed-Architecture-of-VprofileProject.png ](images/Detailed-Architecture-of-VprofileProject.png "" "Image not found: images/Detailed-Architecture-of-VprofileProject.png ")
+
+<img width="693" alt="Detailed-Architecture-of-VprofileProject" src="https://github.com/EmmanuelAfamefuna/AWS-DevOps-Projects/assets/95730360/649f6e26-2e67-403b-8f6b-3f83dad34548">
 
 - We need to setup our services in below mentioned order.
 ```sh
@@ -174,7 +179,8 @@ Reload privilege tables now? [Y/n] Y
 mysql -u root -p
 exit
 ```
-![](images/connected-to-mariadb.png)
+<img width="809" alt="connected-to-mariadb" src="https://github.com/EmmanuelAfamefuna/AWS-DevOps-Projects/assets/95730360/ea4e2e74-2a4c-4524-8766-2c2f6b1df847">
+
 - Next we will clone source code to database vm. And change directory to `src/main/resources/` to get the `sql queries.
 ```
 git clone https://github.com/rumeysakdogan/vprofile-project.git
@@ -240,7 +246,8 @@ memcached -p 11211 -U 11111 -u memcached -d
 ```sh
 ss -tunlp | grep 11211
 ``` 
-![](images/memcached-listening-on-tcp-11211.png)
+<img width="1112" alt="memcached-listening-on-tcp-11211" src="https://github.com/EmmanuelAfamefuna/AWS-DevOps-Projects/assets/95730360/1c186cb4-306c-46e4-be6f-7e15557c2f27">
+
 - Everthing looks good, we can exit from server with `exit` command.
 
 ### Provisioning RabbitMQ
@@ -484,31 +491,39 @@ enp0s8: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 192.168.56.11
 ```
 - First validate Nginx is running on browser `http://<IP_of_Nginx_server>`.
-![](images/app-accessible-through-nginx-server.png)
+
+![app-accessible-through-nginx-server](https://github.com/EmmanuelAfamefuna/AWS-DevOps-Projects/assets/95730360/37cb071c-665a-4aef-8445-042d59c0d40a)
 
 - Validate Db connection using credentials `admin_vp` for both username and password.
 
-![](images/login-successful.png)
+![login-successful](https://github.com/EmmanuelAfamefuna/AWS-DevOps-Projects/assets/95730360/ca273db1-509e-4430-bc73-9a614cc41986)
 
-- Validate app is running from Tomcat server
 
-![](images/db-connection-successful.png)
+- Validate app is running from Tomcat 
+server
+
+![db-connection-successful](https://github.com/EmmanuelAfamefuna/AWS-DevOps-Projects/assets/95730360/e2f93e70-2f23-4a5c-b37c-8848d622a7c3)
+
 
 - Validate RabbitMQ connection by clicking RabbitMQ
   
-![](images/rabbitMq-connection-successful.png)
+![rabbitMq-connection-successful](https://github.com/EmmanuelAfamefuna/AWS-DevOps-Projects/assets/95730360/25f2a3b8-67c8-479d-8a1b-1fa315f4903e)
+
 
 - Validate Memcache connection by clicking MemCache
 
-![](images/memcached-connection-successful.png)
+![memcached-connection-successful](https://github.com/EmmanuelAfamefuna/AWS-DevOps-Projects/assets/95730360/4649f5b3-5deb-4960-a9b0-4fea52baf8f0)
+
 
 - Validate data is coming from Database when user first time requests it.
 
-![](images/data-coming-from-db.png)
+
+![data-coming-from-db](https://github.com/EmmanuelAfamefuna/AWS-DevOps-Projects/assets/95730360/9fb83010-18b0-413e-a13c-f286fc18409a)
 
 - Validate data is coming from Memcached when user second time requests it.
 
-![](images/data-coming-from-memcache.png)
+![data-coming-from-memcache](https://github.com/EmmanuelAfamefuna/AWS-DevOps-Projects/assets/95730360/c1cda282-0377-4a59-830d-59d85a953106)
+
 
 ### CleanUp
 
@@ -516,12 +531,14 @@ enp0s8: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 ```sh
 vagrant destroy
 ```
-![](images/vagrant-destroy.png)
-![](images/vms-destroyed.png)
+<img width="1063" alt="vagrant-destroy" src="https://github.com/EmmanuelAfamefuna/AWS-DevOps-Projects/assets/95730360/8436beff-9bf8-4efc-8681-865759d36af5">
+
+<img width="1063" alt="vms-destroyed" src="https://github.com/EmmanuelAfamefuna/AWS-DevOps-Projects/assets/95730360/a072e83c-1e5b-4fc3-b16b-5757822ebdb7">
+
 
 - Check Oracle VM VirtualBox Manager if Vms are destroyed.
 
-![](images/vms-are-gone-after-vagrant-destroy.png)
+![vms-are-gone-after-vagrant-destroy](https://github.com/EmmanuelAfamefuna/AWS-DevOps-Projects/assets/95730360/36901567-41f4-412a-99ec-5aad4c9c9418)
 
 
 
