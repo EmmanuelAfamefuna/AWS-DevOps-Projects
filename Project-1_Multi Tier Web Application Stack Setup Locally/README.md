@@ -1,6 +1,5 @@
 # Project-1: Vprofile Project:Multi Tier Web Application Stack Setup Locally
 
-[*Project Source*](https://www.udemy.com/course/devopsprojects/?src=sac&kw=devops+projects)
 
 ![Project-Architecture](images/Project-1-Architecture.png)
 
@@ -15,7 +14,7 @@
 
 - First clone the repository
 ```sh
-git clone https://github.com/rumeysakdogan/vprofile-project.git
+git clone https://github.com/emmanuelafamefuna/vprofile-project.git
 ```
 
 - We need to go to directory that our Vagrantfile exists. Before we run our VBoxes using `vagrant`, we need to install below plugin.
@@ -380,7 +379,7 @@ systemctl status tomcat
 
 - We are still in `/tmp` directory, we will clone our source code here.
 ```sh
-git clone https://github.com/rumeysakdogan/vprofile-project.git
+git clone https://github.com/emmanuelafamefuna/vprofile-project.git
 ls
 cd vprofile-project/
 ```
